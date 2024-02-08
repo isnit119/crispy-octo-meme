@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Student Registration Form</title>
+ <style>
+  body {
+    background: linear-gradient(to right, #ff8c00, #ff4d4d);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .box {
+   width: 400px;
+   height: 700px;
+   background-color: rgba(255, 255, 255, 0.8);
+   margin: auto;
+   margin-top: 50px;
+   padding: 20px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form {
+    
+ </style>
+</head>
+<body>
+ <div class="box">
+  <form align="center"
+    onsubmit="return goToAnotherPage()"
+    
+    >
+    <h2><b>Your Details</b></h2>
+    Student ID: <input type="number" name="stdid" placeholder="eg. 13463"><br>
+    First name: <input type="text" name="fname"><br>
+    Middle name: <input type="text" name="mname"><br>
+    Last name: <input type="text" name="lname"><br>
+    Age: <input type="number" name="text"><br>
+    Gender: <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="others">Others<br>
+    Father's Name: <input type="text" name="dad"><br>
+    Mother's Name: <input type="text" name="mom"><br>
+    Contact: <input type="number"><br>
+    Email: <input type="email"><br>
+    Address: <input type="text"><br>
+    Faculty: <select name="faculty">
+      <option value="sci"> Science</option>
+      <option value="mgmt"> Management</option>
+      <option value="law"> Law</option>
+    </select><br>
+    What are your hobbies?<br>
+    <input type="checkbox" name="hobby1" value="playing"checked>Playing<br>
+    <input type="checkbox" name="hobby2" value="singing"checked>Singing<br>
+    <input type="checkbox" name="hobby3" value="dancing"checked>Dancing<br>
+    <input type="checkbox" name="hobby4" value="studing"checked>Studing<br>
+    <input type="checkbox" name="hobby5" value="other"><textarea name="other" cols="7" rows="1" placeholder="Others"></textarea><br>
+    Write about you in few words.<br><textarea name="abtu"cols="30" rows="3"></textarea><br>
+    <input type="submit" value="Register" name="subbtn"><br>
+    <input type="reset" value="Clear all" name="Clearbtn"><br>
+  </form>
+   
+  <script>
+    function goToAnotherPage() {
+        window.location.href = 'hyperlink.html';
+        return false;
+    }
+   
+  </script>
+   
+ </div>
+</body>
+</html>
